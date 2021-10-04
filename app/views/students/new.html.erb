@@ -1,0 +1,12 @@
+<h1> create</h1>
+
+ <%= form_for @student do |form|%>
+ <p>
+  <%= form.label :Name %><br>
+  <%= form.text_field :name %>
+</p>
+
+<p>
+<%= form.submit "submit button" %>
+</p>
+<%end%>

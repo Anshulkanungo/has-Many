@@ -1,0 +1,9 @@
+<h1>Welcome to my new page</h1>
+
+
+<% @students.each do |a| %> 
+  <%= link_to a.name, student_path(a.id) %><br> 
+  <%= link_to "create branch",new_subject_path(id: a.id)%> <br><br>
+ <% end %> 
+
+<%= link_to "new page", new_student_path%>

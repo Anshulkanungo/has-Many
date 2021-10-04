@@ -1,0 +1,15 @@
+<h1>Subject</h1>
+
+<%= form_for Subject.new do |form|%>
+
+ <%= form.text_field :student_id, value: @student.id%>
+
+ <p>
+  <%= form.text_field :branch%>
+</p>
+
+<p>
+  <%= form.submit "button"%>
+</p>
+
+<%end%>
